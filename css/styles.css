@@ -37,3 +37,12 @@ body {
 .navbar-dark {
   background-color: #512da8;
 }
+
+.black{
+  color:#000;
+}
+
+.black:hover{
+  text-decoration: none;
+  color: #000;
+}
