@@ -80,15 +80,21 @@
             <img src="./img/img/logo.png" alt="logo" class="img-fluid" />
           </div>
           <div class="col-12 col-sm-3 align-self-center">
-            <button class="btn btn-warning">
-              <a class="black" href="#one">Reserve Table</a>
+            <button
+              class="btn btn-warning"
+              data-toggle="tooltip"
+              data-html="true"
+              title="Or call us at <br><strong>123 456789 </strong>"
+              data-placement="bottom"
+            >
+              <a class="black" href="#reserveTable">Reserve Table</a>
             </button>
           </div>
         </div>
       </div>
     </header>
 
-    <div class="container" id="one">
+    <div class="container">
       <div class="row row-content align-items-center">
         <div class="col-12 col-sm-4 order-sm-last col-md-3">
           <h3>Our Lipsmacking Culinary Creations</h3>
@@ -167,7 +173,7 @@
       </div>
     </div>
 
-    <div class="container mb-5 mt-5">
+    <div class="container mb-5 mt-5" id="reserveTable">
       <div class="row mx-auto">
         <div class="col-12 col-md-7 mx-auto">
           <div class="card mx-auto">
@@ -362,5 +368,10 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+      })
+    </script>
   </body>
 </html>
